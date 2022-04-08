@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/astask/music4/app/src/main/res/drawable/ic_seek_to.xml" value="0.1953125" />
+        <entry key="..\:/astask/music4/app/src/main/res/drawable/ic_setting.xml" value="0.1953125" />
+        <entry key="..\:/astask/music4/app/src/main/res/drawable/ic_share.xml" value="0.1953125" />
+        <entry key="..\:/astask/music4/app/src/main/res/drawable/ic_share_dark.xml" value="0.1953125" />
+        <entry key="..\:/astask/music4/app/src/main/res/drawable/ic_single.xml" value="0.1953125" />
+        <entry key="..\:/astask/music4/app/src/main/res/drawable/ic_stop.xml" value="0.1953125" />
+        <entry key="..\:/astask/music4/app/src/main/res/drawable/ic_theme.xml" value="0.1953125" />
+        <entry key="..\:/astask/music4/app/src/main/res/layout/activity_about.xml" value="0.1" />
+        <entry key="..\:/astask/music4/app/src/main/res/layout/activity_list.xml" value="0.1" />
+        <entry key="..\:/astask/music4/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/astask/music4/app/src/main/res/layout/activity_player.xml" value="0.1" />
+        <entry key="..\:/astask/music4/app/src/main/res/layout/activity_search.xml" value="0.1" />
+        <entry key="..\:/astask/music4/app/src/main/res/layout/activity_welcome.xml" value="0.1" />
+        <entry key="..\:/astask/music4/app/src/main/res/layout/fragment_download.xml" value="0.1" />
+        <entry key="..\:/astask/music4/app/src/main/res/layout/fragment_index.xml" value="0.22" />
+        <entry key="..\:/astask/music4/app/src/main/res/layout/fragment_like.xml" value="0.16666666666666666" />
+        <entry key="..\:/astask/music4/app/src/main/res/layout/fragment_more.xml" value="0.22" />
+        <entry key="..\:/astask/music4/app/src/main/res/layout/fragment_more_backup.xml" value="0.1" />
+        <entry key="..\:/astask/music4/app/src/main/res/layout/fragment_music_download_dialog.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

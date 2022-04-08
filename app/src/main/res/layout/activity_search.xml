@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/search_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/foreground"
+        android:orientation="vertical"
+        tools:context=".Activity.SearchActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/foreground">
+
+            <ImageView
+                android:id="@+id/search_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_return" />
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/search_radius"
+                android:ems="10"
+                android:fontFamily="@font/fang_zheng_shu_song"
+                android:hint="@string/search_hint"
+                android:inputType="text"
+                android:paddingLeft="40dp"
+                android:paddingRight="18dp"
+                android:textColor="@color/textBlack"
+                android:textColorHint="@color/textHint"
+                android:textSize="18sp"
+                android:visibility="visible"
+                app:layout_constraintBaseline_toBaselineOf="@+id/search_button"
+                app:layout_constraintEnd_toStartOf="@+id/search_button"
+                app:layout_constraintStart_toEndOf="@+id/search_cancel" />
+
+            <ImageView
+                android:id="@+id/searchIcon"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_marginStart="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/search"
+                app:layout_constraintStart_toStartOf="@+id/search"
+                app:layout_constraintTop_toTopOf="@+id/search"
+                app:srcCompat="@mipmap/search" />
+
+            <TextView
+                android:id="@+id/search_button"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/search_button_radius"
+                android:fontFamily="@font/fang_zheng_shu_song"
+                android:gravity="center"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:text="@string/cancel"
+                android:textColor="@color/textWhite"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/foreground">
+
+            <RadioGroup
+                android:id="@+id/source_group"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:checkedButton="@id/kugou"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp">
+
+                <RadioButton
+                    android:id="@+id/kugou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/search_bar_btn_nav_check"
+                    android:button="@null"
+                    android:fontFamily="@font/fang_zheng_shu_song"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/kugou"
+                    android:textColor="@color/search_bar_nav_btn_text_check"
+                    android:textSize="@dimen/small" />
+
+                <RadioButton
+                    android:id="@+id/netease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/search_bar_btn_nav_check"
+                    android:button="@null"
+                    android:fontFamily="@font/fang_zheng_shu_song"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/netease"
+                    android:textColor="@color/search_bar_nav_btn_text_check"
+                    android:textSize="@dimen/small" />
+
+                <RadioButton
+                    android:id="@+id/tencent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/search_bar_btn_nav_check"
+                    android:button="@null"
+                    android:fontFamily="@font/fang_zheng_shu_song"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/kuwo"
+                    android:textColor="@color/search_bar_nav_btn_text_check"
+                    android:textSize="@dimen/small" />
+
+                <RadioButton
+                    android:id="@+id/migu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/search_bar_btn_nav_check"
+                    android:button="@null"
+                    android:fontFamily="@font/fang_zheng_shu_song"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/migu"
+                    android:textColor="@color/search_bar_nav_btn_text_check"
+                    android:textSize="@dimen/small" />
+            </RadioGroup>
+        </HorizontalScrollView>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/search_wapper"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+
+        <FrameLayout
+            android:id="@+id/searchPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/foreground" />
+
+</LinearLayout>

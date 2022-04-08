@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navBar"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:checkedButton="@id/nav_index"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/nav_index"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawableTop="@drawable/nav_bar_btn_index_check"
+        android:fontFamily="@font/fang_zheng_shu_song"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/index"
+        android:textColor="@color/nav_bar_btn_text_check"
+        android:textSize="12sp" />
+
+    <RadioButton
+        android:id="@+id/nav_like"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawableTop="@drawable/nav_bar_btn_like_check"
+        android:fontFamily="@font/fang_zheng_shu_song"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/like"
+        android:textColor="@color/nav_bar_btn_text_check"
+        android:textSize="12sp" />
+
+    <RadioButton
+        android:id="@+id/nav_download"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawableTop="@drawable/nav_bar_btn_download_check"
+        android:fontFamily="@font/fang_zheng_shu_song"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/download"
+        android:textColor="@color/nav_bar_btn_text_check"
+        android:textSize="12sp"
+        android:visibility="visible" />
+
+    <RadioButton
+        android:id="@+id/nav_more"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawableTop="@drawable/nav_bar_btn_more_check"
+        android:fontFamily="@font/fang_zheng_shu_song"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/Myself"
+        android:textColor="@color/nav_bar_btn_text_check"
+        android:textSize="12sp" />
+</RadioGroup>
